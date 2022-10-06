@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Bcd_to_fnd.srcs/sources_1/new/BCD_to_FND_decoder.v" \
+"../../../../Bcd_to_fnd.srcs/sources_1/new/FND_select_decoder.v" \
+"../../../../Bcd_to_fnd.srcs/sim_1/new/tb_BCD_to_FND_decoder.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
